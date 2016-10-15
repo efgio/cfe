@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Custom Form Elements</title>
+<link rel="stylesheet" property="stylesheet" href="styles.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+<form method="get" action="post" enctype="multipart/form-data">
+
+    <input type="radio" id="radio1" name="radiostop" value="all" />
+    <label for="radio1"><span></span>All</label>
+
+    <input type="radio" id="radio2" name="radiostop" value="open" />
+    <label for="radio2"><span></span>Open</label>
+
+    <input type="radio" id="radio3" name="radiostop" value="archived" />
+    <label for="radio3"><span></span>Archived</label> 
+
+	<hr />
+	
+	<input type="radio" id="radio11" name="radiosbottom" value="all" />
+    <label for="radio11"><span></span>All</label>
+
+    <input type="radio" id="radio12" name="radiosbottom" value="open" />
+    <label for="radio12"><span></span>Open</label>
+
+    <input type="radio" id="radio13" name="radiosbottom" value="archived" />
+    <label for="radio13"><span></span>Archived</label>
+	
+	<hr />
+	
+	<input id="checkbox21" type="checkbox" name="vehicle" value="Bike">
+	<label for="checkbox21"><span></span>Bike</label>
+	
+	<input id="checkbox22" type="checkbox" name="vehicle" value="Car">
+	<label for="checkbox22"><span></span>Car</label>
+
+	<hr />
+	
+	<label for="text1"><span></span>text:</label>
+	<input id="text1" type="text" name="text1" value="" />
+	
+	<hr />
+	
+	<label for="pass1"><span></span>password:</label>
+	<input id="pass1" type="password" name="text2" value="" />
+
+	<hr />
+	
+	JQUERY:<br>
+	<input id="uploadFile" type="text" value="" class="fileInput" disabled />
+	<input type="file" id="file1" name="file1" />
+    <label for="file1">Find File</label>
+	
+	<hr />
+	
+	PURE JAVASCRIPT:<br>
+	<input id="uploadFile2" type="text" value="" class="fileInput" disabled />
+	<input type="file" name="file2" id="file2" onchange="copyFilename(this.value);"/>
+    <label for="file2">Find File</label>
+	
+	<hr />
+	
+	<input type="submit" />
+	
+</form>
+
+</body>
+</html>
