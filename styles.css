@@ -1,22 +1,18 @@
 body { font:16px normal Arial; color:#444 }
-
+label { margin-bottom: 10px; }
 input[type="radio"], input[type="checkbox"] { display:none; }
 input[type="radio"] + label, input[type="checkbox"] + label { float:left; width:100%; }
 input[type="radio"] + label span { float:left; margin:-2px 5px 0px 0px; width:18px; height:19px; background-image:url(frm.png); background-position:-4px -4px; }
 input[type="radio"]:checked + label span { float:left; margin:-2px 5px 0px 0px; width:18px; height:19px; background-image:url(frm.png); background-position:-31px -4px; }
-
 input[type="checkbox"] + label span { float:left; margin:-2px 5px 0px 0px; width:21px; height:18px; background-image:url(frm.png); background-position:-74px -4px; }
 input[type="checkbox"]:checked + label span { float:left; margin:-2px 5px 0px 0px; width:21px; height:18px; background-image:url(frm.png); background-position:-101px -4px; }
-
 input[type="text"] { padding:5px 10px; border:1px solid #444; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); color:#fff; }
 input[type="text"]:focus { outline: none; }
-
 input[type="password"] { padding:5px 10px; border:1px solid #444; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; background-color:#000; color:#f00; }
 input[type="password"]:focus { outline: none; }
-
 input[type="file"] { display:none; }
 input[type="file"] + label { cursor:pointer; }
-
+input[type="submit"] { padding:10px 20px; background-color:#127709; color:#fff; border:0px; }
+select { padding: 5px 8px; border: 1px solid #ccc; width: 120px; color:#fff; background-color: #896500; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
+select:focus { outline: none; }
 .fileInput { padding:5px 10px; border:1px solid #333 !important; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; background:#efefef !important; color:#444!important; }
-
-input[type="submit"] { padding:5px 10px; background-color:#124509; color:#fff; border:0px; }
