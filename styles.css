@@ -1,6 +1,6 @@
 body { font:16px normal Arial; color:#444 }
 label { margin-bottom: 10px; }
-input[type="radio"], input[type="checkbox"] { float:left; position:relative; overflow:hidden; width:0px; height:0px; margin-top:-20px; }
+input[type="radio"], input[type="checkbox"] { float:left; position:absolute; width:0px; height:0px; overflow:hidden; left:0px; top:-9999px; }
 input[type="radio"] + label, input[type="checkbox"] + label { float:left; width:100%; }
 input[type="radio"] + label span { float:left; margin:-2px 5px 0px 0px; width:18px; height:19px; background-image:url(frm.png); background-position:-4px -4px; }
 input[type="radio"]:checked + label span { float:left; margin:-2px 5px 0px 0px; width:18px; height:19px; background-image:url(frm.png); background-position:-31px -4px; }
